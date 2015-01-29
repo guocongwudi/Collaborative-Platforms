@@ -1,6 +1,6 @@
 <% provide(:title, 'Label') %>
 <h1>Label me</h1>
-<%= @bold.html_safe %>
+<h4><%= @bold.html_safe %></h4>
 <br>
 <br>
 <div class="text-center">
@@ -25,5 +25,5 @@
     <%= f.submit "Submit labels", class:"btn btn-primary" %>
   <% end %>
 
-      <div class="text-left"><%= @post.upload.instructions.html_safe %></div>
+      <div class="text-left"><h4><%= @post.upload.instructions.html_safe %></h4></div>
 </div>
